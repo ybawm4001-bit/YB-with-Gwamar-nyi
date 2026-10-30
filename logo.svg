@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Radiant Electric Blue Heart Gradient (အပြာရောင် အသည်းနှလုံး) -->
+    <linearGradient id="pureBlueHeart" x1="15%" y1="5%" x2="85%" y2="95%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="35%" stop-color="#2563EB" />
+      <stop offset="70%" stop-color="#1D4ED8" />
+      <stop offset="100%" stop-color="#1E3A8A" />
+    </linearGradient>
+
+    <!-- Subtle Blue Specular Curve Highlight -->
+    <linearGradient id="blueSpecular" x1="25%" y1="10%" x2="55%" y2="60%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.55" />
+      <stop offset="50%" stop-color="#BAE6FD" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Radiant Sapphire Blue Glow Filter -->
+    <filter id="pureBlueGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#2563EB" flood-opacity="0.65" />
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#38BDF8" flood-opacity="0.45" />
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.7" />
+    </filter>
+  </defs>
+
+  <!-- Clean Dark Background -->
+  <rect width="512" height="512" rx="140" fill="#090d16"/>
+
+  <!-- Pure Blue Heart ONLY (အပြာရောင် အသည်းနှလုံး သီးသန့် - အတွင်းထဲတွင် မည်သည့်ပုံမျှ မပါရှိပါ) -->
+  <g filter="url(#pureBlueGlow)">
+    <path d="M 256,438
+             C 246,428 136,334 78,266
+             C 20,198 26,112 86,64
+             C 146,16 226,42 256,110
+             C 286,42 366,16 426,64
+             C 486,112 492,198 434,266
+             C 376,334 266,428 256,438 Z"
+          fill="url(#pureBlueHeart)" />
+
+    <!-- Organic Heart Highlight Curve -->
+    <path d="M 256,116
+             C 230,62 166,40 114,80
+             C 66,120 62,182 110,242
+             C 152,194 206,142 256,116 Z"
+          fill="url(#blueSpecular)" />
+  </g>
+</svg>
